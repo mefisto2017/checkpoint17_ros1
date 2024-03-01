@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  tortoise_gazebo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tortoise_ros1_container
+    hostname: tortoise_ros1_container
+    restart: "no"
+    command: "bash -c 'source /root/catkin_ws/devel/setup.bash && rostest tortoisebot_waypoints waypoints_test.test'"
