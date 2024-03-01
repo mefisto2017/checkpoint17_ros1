@@ -39,7 +39,7 @@ Repository for CI/CD based on Jenkins and a tortoisebot
 ### Installation
 1. Clone the repo
    ```sh
-   git clone https://github.com/mefisto2017/checkpoint17
+   git clone https://github.com/mefisto2017/checkpoint17_ros1
    ```
 2. Docker instalation
    ```sh
@@ -79,4 +79,4 @@ pw: 402e4b9cc7c744f19249c186070498fa
 ```
 4. Modify the README.MD file
 
-5. Push the changes by loading the id_rsa file to the ssh-agent, password is empty.
+5. Push the changes by loading the id_rsa file (catkin_ws/src/ros1_ci) to the ssh-agent, password is empty.
