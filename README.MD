@@ -57,24 +57,8 @@ Repository for CI/CD based on Jenkins and a tortoisebot
 
 <!-- USAGE of the simulation -->
 ## Usage Simulation
-1. Launch the simulation and activate the controllers:
+1. Test:
 ```sh
-ros2 launch rb1_ros2_description rb1_ros2_xacro.launch.py
-```
-
-2. Move the robot:
-```sh
-ros2 topic pub --rate 10 /rb1_base_controller/cmd_vel_unstamped geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0, z: 0.0}, angular: {x: 0.0,y: 0.0, z: 0.2}}"
-```
-
-3. Lift the platform:
-```sh
-ros2 topic pub --rate 10 /elevator_controller/commands std_msgs/msg/Float64MultiArray  "data:
-- 10.0"
-```
-
-4. Lower the platform:
-```sh
-ros2 topic pub --rate 10 /elevator_controller/commands std_msgs/msg/Float64MultiArray  "data:
-- -10.0"
+cd docker
+docker-compose up
 ```
