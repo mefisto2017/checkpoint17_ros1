@@ -33,9 +33,13 @@ RUN apt-get install -y git \
 # Clone the tortoise repo
 RUN mkdir -p /root/catkin_ws/src 
 COPY ./tortoisebot/tortoisebot_gazebo/ /root/catkin_ws/src/tortoisebot_gazebo
+RUN true
 COPY ./tortoisebot/tortoisebot_description/ /root/catkin_ws/src/tortoisebot_description
+RUN true
 COPY ./tortoisebot/tortoisebot_slam/ /root/catkin_ws/src/tortoisebot_slam
+RUN true
 COPY ./tortoisebot/tortoisebot_description/ /root/catkin_ws/src/tortoisebot_description
+RUN true
 COPY ./tortoisebot/tortoisebot_waypoints/ /root/catkin_ws/src/tortoisebot_waypoints
 
 # Link python3 to python otherwise ROS scripts fail when using the OSRF contianer
