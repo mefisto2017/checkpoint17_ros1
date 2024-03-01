@@ -62,3 +62,21 @@ Repository for CI/CD based on Jenkins and a tortoisebot
 cd docker
 docker-compose up
 ```
+
+## Jenkin Test
+1. Start jenkins:
+```sh
+bash ~/webpage_ws/start_jenkins.bash
+```
+2. Copy the url from :
+```sh
+~/jenkins__pid__url.txt
+```
+3. Log :
+```sh
+user: admin
+pw: 402e4b9cc7c744f19249c186070498fa
+```
+4. Modify the README.MD file
+
+5. Push the changes by loading the id_rsa file to the ssh-agent, password is empty.
