@@ -10,7 +10,7 @@ services:
     restart: "no"
     # HEADLESS GAZEBO
     #command: "bash -c 'source /root/catkin_ws/devel/setup.bash && rostest tortoisebot_waypoints waypoints_test.test'"
-    # FUCKING STUPID GAZEBO, SO GIRISH IS HAPPY
+    # GAZEBO VIS
     environment:
       - DISPLAY=$DISPLAY
     volumes:
