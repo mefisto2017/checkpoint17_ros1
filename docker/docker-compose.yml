@@ -8,4 +8,10 @@ services:
     container_name: tortoise_ros1_container
     hostname: tortoise_ros1_container
     restart: "no"
-    command: "bash -c 'source /root/catkin_ws/devel/setup.bash && rostest tortoisebot_waypoints waypoints_test.test'"
+    # HEADLESS GAZEBO
+    #command: "bash -c 'source /root/catkin_ws/devel/setup.bash && rostest tortoisebot_waypoints waypoints_test.test'"
+    # FUCKING STUPID GAZEBO, SO GIRISH IS HAPPY
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
