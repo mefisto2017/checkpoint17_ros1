@@ -40,7 +40,7 @@ Repository for CI/CD based on Jenkins and a tortoisebot
 1. Clone the repo catkin_ws/src
    ```sh
    cd /home/user/catkin_ws/src && \
-   git clone https://github.com/mefisto2017/checkpoint17_ros1 && \
+   git clone https://github.com/pvela2017/checkpoint17_ros1 && \
    mv checkpoint17_ros1 ros1_ci
    ```
 2. Docker instalation
